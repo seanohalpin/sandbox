@@ -26,11 +26,11 @@ And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][r
 
 And this should be source code:
 
-<code>
+#+HTML: <code>
 class Foo
   attr_accessor :name
 end
-</code>
+#+HTML: </code>
 
 And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
 
