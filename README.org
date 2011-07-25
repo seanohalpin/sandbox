@@ -10,7 +10,7 @@
 
 This should be in *bold* and this in /italic/.
 
-* Another try
+** Another try
 
 And this should be source code:
 
@@ -19,6 +19,18 @@ class Foo
   attr_accessor :name
 end
 ```
+
+And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
+
+** And another
+
+And this should be source code:
+
+<code>
+class Foo
+  attr_accessor :name
+end
+</code>
 
 And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
 
