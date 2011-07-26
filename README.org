@@ -1,10 +1,12 @@
 * Testing github's org support
 
-#+begin_example
+Some source code:
+
+#+BEGIN_SRC ruby
   def hello
     puts "hello"
   end
-#+end_example
+#+END_SRC ruby
 
 ** Some more
 
@@ -26,9 +28,11 @@ And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][r
 
 And this should be source code:
 
-  class Foo
-    attr_accessor :name
-  end
+    class Foo
+      attr_accessor :name
+    end
 
 And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
+
+: echo hello > /dev/null
 
