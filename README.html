@@ -1,125 +1,60 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-lang="en" xml:lang="en">
-<head>
-<title>README</title>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-07-26 10:27:07 BST"/>
-<meta name="author" content="Sean O'Halpin"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<h1>Testing github's org support</h1>
 
+<p>This should be a source code block:</p>
 
+<h2>Org format</h2>
 
-</head>
-<body>
-<div id="content">
+<pre><code>  def hello
+    puts &quot;hello&quot;
+  end
+</code></pre>
 
-<h1 class="title">README</h1>
+<h2>Gollum format</h2>
 
-<div id="table-of-contents">
-<h2>Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1 Testing github's org support </a>
-<ul>
-<li><a href="#sec-1-1">1.1 Some more </a></li>
-<li><a href="#sec-1-2">1.2 Another try </a></li>
-<li><a href="#sec-1-3">1.3 And another </a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<p>This should be a source code block:</p>
 
-<div id="outline-container-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Testing github's org support </h2>
-<div class="outline-text-2" id="text-1">
-
-
-<p>
-Some source code:
-</p>
-
-
-
-<pre class="src src-ruby"><span class="org-keyword">def</span> <span class="org-function-name">hello</span>
-  puts <span class="org-string">"hello"</span>
-<span class="org-keyword">end</span>
-
-</pre>
-
-
-<p>
- ruby
-</p>
-
-</div>
-
-<div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Some more </h3>
-<div class="outline-text-3" id="text-1-1">
-
-
-<p>
-This should be in <b>bold</b> and this in <i>italic</i>.
-</p>
-</div>
-
-</div>
-
-<div id="outline-container-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Another try </h3>
-<div class="outline-text-3" id="text-1-2">
-
-
-<p>
-And this should be source code (but doesn't work in README):
-</p>
-<p>
-```ruby
-class Foo
-  attr<sub>accessor</sub> :name
+<pre><code>class Foo
+  attr_accessor :name
 end
-```
-</p>
-<p>
-And a link to one of our projects: <a href="https://github.com/bbcrd/radiotag-models">radiotag-models</a>.
-</p>
-</div>
+</code></pre>
 
-</div>
+<h2>Inline markdown format</h2>
 
-<div id="outline-container-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> And another </h3>
-<div class="outline-text-3" id="text-1-3">
+<p>This should be a source code block too:</p>
 
+<pre><code>class Foo
+  attr_accessor :name
+end
+</code></pre>
 
-<p>
-And this should be source code:
-</p>
-<p>
-    class Foo
-      attr<sub>accessor</sub> :name
-    end
-</p>
-<p>
-And a link to one of our projects: <a href="https://github.com/bbcrd/radiotag-models">radiotag-models</a>.
-</p>
-<pre class="example">
-echo hello &gt; /dev/null
-</pre>
+<h2>Links</h2>
 
+<p>A link to one of our projects: <a href="https://github.com/bbcrd/radiotag-models">radiotag-models</a>.</p>
 
-</div>
-</div>
-</div>
-<div id="postamble">
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
-</div>
-</div>
-</body>
-</html>
+<p>A bare link: <a href="http://www.bbc.co.uk">http://www.bbc.co.uk</a>.</p>
+
+<h2>Example</h2>
+
+<p>This is an example:</p>
+
+<pre><code>echo hello &gt; /dev/null
+</code></pre>
+
+<h2>Inline formatting</h2>
+
+<p>This should be in  <strong>bold</strong> , this in <em>italic</em>  and this is a <code>code snippet</code>.</p>
+
+<h2>Lists</h2>
+
+<ul>
+<li>A list</li>
+<li>Of items
+
+<ul>
+<li>nested</li>
+<li>to the</li>
+<li>third</li>
+<li>level</li>
+</ul></li>
+<li>and back out again</li>
+</ul>

@@ -1,6 +1,8 @@
 * Testing github's org support
 
-Some source code:
+This should be a source code block:
+
+** Org format
 
 #+BEGIN_SRC ruby
   def hello
@@ -8,13 +10,9 @@ Some source code:
   end
 #+END_SRC ruby
 
-** Some more
+** Gollum format
 
-This should be in *bold* and this in /italic/.
-
-** Another try
-
-And this should be source code (but doesn't work in README):
+This should be a source code block:
 
 ```ruby
 class Foo
@@ -22,17 +20,36 @@ class Foo
 end
 ```
 
-And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
+** Inline markdown format
 
-** And another
-
-And this should be source code:
+This should be a source code block too:
 
     class Foo
       attr_accessor :name
     end
 
-And a link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
+** Links
+
+A link to one of our projects: [[https://github.com/bbcrd/radiotag-models][radiotag-models]].
+
+A bare link: [[http://www.bbc.co.uk]].
+
+** Example
+
+This is an example:
 
 : echo hello > /dev/null
 
+** Inline formatting
+
+This should be in *bold*, this in /italic/ and this is a =code snippet=.
+
+** Lists
+
+- A list
+- Of items
+  - nested
+  - to the
+    - third
+    - level
+- and back out again
