@@ -61,3 +61,10 @@ This should be in  **bold** , this in _italic_  and this is a `code snippet`.
     - third
     - level
 - and back out again
+
+And a couple of command lines:
+
+    $ ls *.rb
+    $ echo hello world
+    hello world
+

@@ -65,6 +65,11 @@ ARGF.each_line do |line|
     dbg :case, 2, :code_line, $1
     code_block($1)
     next
+  when /^\s*(\$.*)/i
+    # command line
+    dbg :case, 2, :code_line, $1
+    code_block($1)
+    next
   when /^\s*#\+BEGIN_QUOTE/i
     # start quote
     dbg :case, 3, :begin_quote
@@ -133,15 +138,8 @@ ARGF.each_line do |line|
     # skip table header lines
     next
   when /^\s*\-+\s+/
-    # bullet list
+    # bullet list - passthrough as same in org and markdown
     dbg :case, 11, :bullet_list_item
-    #line = line.gsub(/^(\s*\-)/) do |m|
-    #  # "*" * (($1.size + 1) / 2)
-    #  "" * (($1.size + 1) / 2)
-    #end
-  when /^\s*:(.*)$/
-    dbg :case, 12, :example
-    puts "XMP: #{$1}"
   end
 
   # replace links
@@ -170,7 +168,6 @@ ARGF.each_line do |line|
     # make sure not inside link
     " **#{$1}** "
   }
-
 
   # bit crude but works (mostly)
   # code span
